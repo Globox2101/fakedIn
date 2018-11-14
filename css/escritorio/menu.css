@@ -1,0 +1,349 @@
+.menu
+{
+    background-color: var(--color-fondo-menu-tercero);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}
+
+    .menu--contenedor
+    {
+        width: 100%;
+        max-width: var(--anchura--contenedor--general);
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .menu--busqueda
+        {
+            /* background-color: blue; */
+            margin-right: auto;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            max-width: 350px;
+        }
+
+            .menu--busqueda--logo
+            {
+                height: 100%;
+                width: 60px;
+                /* background-color: red; */
+            }
+
+            .menu--busqueda--caja
+            {
+                background-color: #eee;
+                display: flex;
+                height: 35px;
+                width: 100%;
+                align-items: center;
+                border-radius: 3px;
+            }
+
+                .menu--busqueda--caja--input
+                {
+                    height: 100%;
+                    width: 250px;
+                    background-color: transparent;
+                    border: none;
+                }
+                .menu--busqueda--caja--desplegable
+                {
+                    display: none;
+                }
+
+        .menu--navegacion
+        {
+            margin-left: auto;
+            /* background-color: green; */
+            display: flex;
+            width: 60%;
+        }
+
+            .menu--navegacion--opcion
+            {
+                /* background-color: tomato; */
+                margin-right: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                color: #ddd;
+                position: relative;
+                width: 100%;
+            }
+
+                .menu--navegacion--opcion:hover
+                {
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                .menu--navegacion--opcion--icono
+                {
+                    height: 24px;
+                    width: 24px;
+                    /* background-color: blue; */
+                    margin-bottom: -5px;
+                    fill: transparent;
+                    /* border-radius: 200px; */
+                    
+                }
+
+                .menu--navegacion--opcion--foto
+                {
+                    border-radius: 200px;
+                    border: 1px solid lightgray;
+                }
+
+                .menu--navegacion--opcion--activo
+                {
+                    border-bottom: 2px solid var(--color-texto-segundo);
+                    color: white;
+                }
+
+                .menu--navegacion--opcion--texto
+                {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                    .menu--navegacion--opcion--texto--opciones
+                    {
+                        background-color: white;
+                        position: absolute;
+                        width: 300px;
+                        right: 0;
+                        z-index: 4;
+                        color: black;
+                        cursor:default;
+                        top: 56px;
+                        box-shadow: 1px 1px 10px gray;
+                    }    
+
+                        .menu--navegacion--opcion--texto--opciones--contenedor
+                        {
+                            border-bottom: 1px solid lightgray;
+                            display: flex;
+                            flex-direction: column;
+                            
+                        }
+
+                            .menu--navegacion--opcion--texto--opciones--contenedor--opciones
+                            {
+                                padding: 10px;
+                                text-decoration: none;
+                                color: black;
+                                transition: 0.3s;
+                                text-align: left;
+                            }
+
+                                .menu--navegacion--opcion--texto--opciones--contenedor--opciones:hover
+                                {
+                                    background-color: lightgray;
+                                    cursor: pointer;
+                                }
+
+                        .menu--navegacion--opcion--texto--opciones--titulo
+                        {
+                            background-color: #eee;
+                            padding: 10px;
+                            border-bottom: 1px solid lightgray;
+                            font-weight: bold;
+                            font-size: 1.1em;
+                            text-align: left;
+                        }
+                    
+                        .menu--navegacion--opcion--texto--opciones--encabezado
+                        {
+                            /* background-color: red; */
+                            padding: 10px;
+                            border-bottom: 1px solid gray;
+                        }
+
+                            .menu--navegacion--opcion--texto--opciones--encabezado--datos
+                            {
+                                display: flex;
+                                /* background-color: blue; */
+                                align-items: center;
+                            }
+
+                                .menu--navegacion--opcion--texto--opciones--encabezado--datos--foto
+                                {
+                                    
+                                }
+
+                                    .menu--navegacion--opcion--texto--opciones--encabezado--datos--foto--img
+                                    {
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 200px;
+                                        box-shadow: 1px 1px 3px gray;
+                                        margin-right: 10px;
+                                    }
+
+
+                                .menu--navegacion--opcion--texto--opciones--encabezado--datos--informacion
+                                {
+                                    font-size: 1.2em;
+                                }
+
+                            .menu--navegacion--opcion--texto--opciones--encabezado--verPerfil
+                            {
+                                /* background-color: tomato; */
+                                text-align: center;
+                                padding: 5px;
+                                color: var(--color-fondo-menu-segundo);
+                                transition: 0.3s;
+                            }
+
+                                .menu--navegacion--opcion--texto--opciones--encabezado--verPerfil:hover
+                                {
+                                    background-color: var(--color-fondo-menu);
+                                    cursor: pointer;
+                                    color: white;
+                                }
+
+.menu--barraLateral
+{
+    /* background-color: red; */
+    width: 100%;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .menu--barraLateral--negro
+    {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* height: 100%; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .menu--barraLateral--contenedor
+    {
+        height: calc(100vh - 55px);
+        width: 350px;
+        background-color: #f3f6f8;
+        position: relative;
+        color: black;
+        cursor: default;
+        /* position: absolute; */
+    }
+    
+        .menu--barraLateral--contenedor--opciones
+        {
+            margin: auto;
+            margin-top: 50px;
+            width: 95%;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+        }
+
+    .menu--barraLateral--contenedor--cerrar
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+    }
+
+        .menu--barraLateral--contenedor--cerrar:hover
+        {
+            cursor: pointer;
+        }
+
+        .menu--barraLateral--contenedor--opciones--encabezado
+        {
+            padding: 20px;
+            /* background-color: green; */
+            border-bottom: 1px solid lightgray;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    
+    .menu--barraLateral--contenedor--opciones--contenido
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px 5px;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+        .menu--barraLateral--contenedor--opciones--contenido--opciones
+        {
+            /* background-color: red; */
+            margin: 6px;
+            width: 70px;
+            text-align: center;
+            transition: 0.4s;
+            color: gray;
+        }
+
+            .menu--barraLateral--contenedor--opciones--contenido--opciones:hover
+            {
+                cursor: pointer;
+                color: var(--color-fondo-menu);
+            }
+
+            .menu--barraLateral--contenedor--opciones--contenido--opciones--icono
+            {
+                /* background-color: red; */
+                height: 40px;
+                width: 40px;
+                margin: auto;
+                box-shadow: 0px 0px 3px gray;
+                margin-bottom: 5px;
+            }
+
+            .menu--barraLateral--contenedor--opciones--contenido--opciones--texto
+            {
+                font-size: .9em;
+            }
+
+
+
+
+
+/* Animaciones con vue */
+.barraLateral-enter-active, 
+.barraLateral-leave-active, 
+.fondoNegro-enter-active, 
+.fondoNegro-leave-active, 
+.menuCuenta-enter-active, 
+.menuCuenta-leave-active
+{
+    transition: all .5s ease;
+}
+.barraLateral-enter, .barraLateral-leave-to
+{
+    transform: translateX(500px);
+}
+
+.fondoNegro-enter, .fondoNegro-leave-to
+{
+    opacity: 0;
+}
+
+.menuCuenta-enter, .menuCuenta-leave-to
+{
+    transform: translateY(-50px) rotateY(60deg);
+    opacity: 0;
+}
+

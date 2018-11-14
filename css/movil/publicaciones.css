@@ -1,0 +1,303 @@
+.publicaciones
+{
+    width: 95%;
+    /* background-color: red; */
+    margin: auto;
+}
+
+    .publicaciones--contenedor
+    {
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+        /* box-shadow: 0px 1px 1px; */
+        margin-bottom: 12px;
+    }
+
+        .publicaciones--contenedor--encabezado
+        {
+            width: 100%;
+            /* background-color: blue; */
+            display: flex;
+            /* margin-bottom: 10px; */
+        }
+
+            .publicaciones--contenedor--encabezado--texto
+            {
+                width: 100%;
+                /* background-color: red; */
+                border-bottom: 1px solid lightgray;
+                padding: 5px 0;
+            }
+
+            .publicaciones--contenedor--encabezado--logo
+            {
+                width: 45px;
+                height: 45px;
+                margin-right: 7px;
+                border-radius: 4px;
+            }
+
+            .publicaciones--contenedor--encabezado--info
+            {
+                /* background-color: green; */
+                width: 100%;
+            }
+
+                .publicaciones--contenedor--encabezado--info--nombre
+                {
+                    font-size: 1em;
+                    margin-bottom: 2px;
+                }
+
+                .publicaciones--contenedor--encabezado--info--seguidores
+                {
+                    font-size: .9em;
+                }
+                .publicaciones--contenedor--encabezado--info--tiempo
+                {
+                    font-size: .9em;
+                }
+
+            .publicaciones--contenedor--encabezado--ajustes
+            {
+                /* display: none; */
+                position: relative;
+            }
+
+                .publicaciones--contenedor--encabezado--ajustes--contenedor
+                {
+                    display: block;
+                    position: absolute;
+                    background-color: white;
+                    width: 90vw;
+                    right: 0;
+                    z-index: 1;
+                    box-shadow: 0px 0px 4px;
+                }
+
+                .publicaciones--contenedor--encabezado--ajustes--contenedor--opcion
+                {
+                    border-bottom: 1px solid lightgray;
+                    display: flex;
+                    text-decoration: none;
+                }
+
+                    .publicaciones--contenedor--encabezado--ajustes--contenedor--opcion--icono
+                    {
+                        width: 50px;
+                        /* background-color: green; */
+                        min-height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: gray;
+                    }
+
+                    .publicaciones--contenedor--encabezado--ajustes--contenedor--opcion--info
+                    {
+                        /* background-color: blue; */
+                        width: 100%;
+                        min-height: 45px;
+                        padding: 5px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        color: gray;
+                    }
+
+                        .publicaciones--contenedor--encabezado--ajustes--contenedor--opcion--info--titulo
+                        {
+                            font-size: 1em;
+                            width: 100%;
+                            color: black
+                        }
+
+        .publicaciones--contenedor--contenido
+        {
+            /* background-color: gray; */
+        }
+
+            .publicaciones--contenedor--contenido--persona
+            {
+                display: flex;
+                border-bottom: lightgrey 1px solid;
+                padding: 10px 0;
+            }
+
+                .publicaciones--contenedor--contenido--persona--foto
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* background-color: blue; */
+                    margin-right: 10px;
+                }
+
+                    .publicaciones--contenedor--contenido--persona--foto--img
+                    {
+                        background-color: red;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 200px;
+                    }
+
+                .publicaciones--contenedor--contenido--persona--info
+                {
+                    width: 100%;
+                    /* background-color: green; */
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: 0;
+                }
+
+                    .publicaciones--contenedor--contenido--persona--info--nombre
+                    {
+                        width: 100%;
+                        /* background-color: blue; */
+                    }
+                    
+                    .publicaciones--contenedor--contenido--persona--info--ocupacion
+                    {
+                        margin-top: -20px;
+                        width: 100%;
+                        /* background-color: goldenrod; */
+                    }
+
+                .publicaciones--contenedor--contenido--persona--accion
+                {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                    color: var(--color-fondo-menu);
+                    font-weight: bold;
+                }
+
+                    .publicaciones--contenedor--contenido--persona--accion:hover
+                    {
+                        cursor: pointer; 
+                    }
+
+                    .publicaciones--contenedor--contenido--persona--accion--icono
+                    {
+                        fill: var(--color-fondo-menu);
+                    }
+
+            .publicaciones--contenedor--contenido--texto
+            {
+                height: 50px;
+                overflow: hidden;
+                position: relative;
+                /* background-color:green; */
+                display: flex;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+
+                .publicaciones--contenedor--contenido--texto--leerMas
+                {
+                    background-color: white;
+                    width: auto;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding-left: 10px;
+                }
+
+                    .publicaciones--contenedor--contenido--texto--leerMas:hover
+                    {
+                        cursor: pointer;
+                    }
+
+            .publicaciones--contenedor--contenido--video
+            {
+                width: 100%;
+                border: 1px solid lightgray;
+                margin-bottom: 10px;
+            }
+
+                .publicaciones--contenedor--contenido--video--iframe
+                {
+                    width: 100%;
+                    border: none;
+                    background-color: black;
+                }
+
+                .publicaciones--contenedor--contenido--video--info
+                {
+                    padding: 10px;
+                }
+
+                    .publicaciones--contenedor--contenido--video--info--titulo
+                    {
+                        font-size: 1.2em;
+                    }
+
+                    .publicaciones--contenedor--contenido--video--info--direccion
+                    {
+                        font-size: .9em;
+                    }
+
+
+        .publicaciones--contenedor--ver
+        {
+            display: flex;
+            /* background-color: blue; */
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            margin-bottom: -10px;
+        }
+
+            .publicaciones--contenedor--ver--texto
+            {
+                color: var(--color-fondo-menu);
+                font-weight: bold;
+            }
+
+                .publicaciones--contenedor--ver--texto:hover
+                {
+                    cursor: pointer;
+
+                }
+
+        .publicaciones--contenedor--recepcion
+        {
+            /* background-color: red; */
+            display: flex;
+            font-size: .8em;
+            border-bottom: 1px solid lightgray;
+            color: #444;
+
+        }
+
+            .publicaciones--contenedor--recepcion--recomendaciones
+            {
+                margin-right: 20px;
+                margin-bottom: 10px;
+            }
+
+        .publicaciones--contenedor--opinion
+        {
+            height: 40px;
+            /* background-color: red; */
+            display: flex;
+            width: 100%;
+        }
+
+            .publicaciones--contenedor--opinion--opcion
+            {
+                /* background-color: green; */
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .publicaciones--contenedor--opinion--opcion--icono
+                {
+                    cursor: pointer;
+                }

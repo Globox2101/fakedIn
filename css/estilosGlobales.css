@@ -1,0 +1,31 @@
+:root
+{
+    --color-fondo-menu: #0073b1;
+    --color-fondo-menu-segundo: #035f91;
+    --color-fondo-menu-tercero: #283e4a;
+
+    --color-texto-primero: black;
+    --color-texto-segundo: white;
+    --color-texto-tercero: gray;
+
+    --anchura--contenedor--general: 1100px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body
+{
+    background-color: rgb(245, 245, 245);
+}
+
+.ocultar
+{
+    display: none !important;
+}

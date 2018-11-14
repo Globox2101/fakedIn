@@ -1,0 +1,115 @@
+.menu
+{
+    background-color: var(--color-fondo-menu);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+    .menu--navegacion
+    {
+        display: flex;
+
+    }
+
+        .menu--navegacion--opcion
+        {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            padding: .5em;
+        }
+
+            .menu--navegacion--opcion--icono
+            {
+                fill: transparent;
+            }
+
+            .menu--navegacion--opcion--activo
+            {
+                border-bottom: 2px solid var(--color-texto-segundo);
+                fill: currentColor;
+            }
+
+            
+    .menu--busqueda
+    {
+        display: flex;
+        height: 50px;
+    }
+
+        .menu--busqueda--fotoPerfil
+        {
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .menu--busqueda--fotoPerfil--img
+            {
+                height: 25px;
+                width: 25px;
+                border-radius: 20px;
+                border: 1px solid white;
+            }
+
+        .menu--busqueda--contenedor
+        {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .menu--busqueda--contenedor--caja
+            {
+                width: 100%;
+                display: flex;
+                padding: 10px;
+                border-radius: 2px;
+                position: relative;
+                margin-right: 10px;
+                background-color: var(--color-fondo-menu-segundo);
+            }
+                .menu--busqueda--contenedor--caja--icono
+                {
+                    position: absolute;
+                    left: 5px;
+                    fill: #aaa;
+                }
+
+                .menu--busqueda--contenedor--caja--input
+                {
+                    width: 98%;
+                    font-size: .9em;
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 15px;
+                    color: #aaa;
+                }
+
+                    .menu--busqueda--contenedor--caja--input::placeholder
+                    {
+                        color: #aaa;
+                    }
+
+        
+.botonCompartir
+{
+    background-color: white;
+    box-shadow: 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    font-size: 1.2em;
+    margin-top: 92px;
+    margin-bottom: 10px;
+}
+
+    .botonCompartir--informacion
+    {
+        color: #555;
+    }
